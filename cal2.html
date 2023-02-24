@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cal2</title>
+     <Style>
+          *{
+               margin: 0%;
+               padding: 0%;
+               box-sizing: border-box;
+          }
+          #container{
+               width: 500px;
+               height: 500px;
+               padding: 10px;
+               margin-top: 8%;
+               margin-left: 35%;
+               background: rgba(92, 40, 40, 0.848);
+               display: flex;
+               justify-content: center;
+               border-radius: 25px;  
+          }
+          .title{
+               font-size: 35px;
+               color: chartreuse;
+               font-family: cursive;
+               margin: 10px;
+               text-align: center;
+               font-weight: 800;
+          }
+          #display{
+               display: flex;
+               padding: 25px;
+               width: 100%;
+               font-size: 25px;
+               text-align: center;
+               box-shadow: inset 5px 5px 50px rgb(45, 43, 40);
+               border: none;
+               border-radius: 10px;
+          }
+          #display:hover{
+               background-color: chartreuse;
+          }
+          .button{
+               font-size: 25px;
+               width: 100px;
+               height: 70px;
+               font-weight: bold;
+               margin: 2px;
+               box-shadow:inset 5px 5px 50px rgb(45, 43, 40) ;
+               cursor: pointer;
+               border-radius: 10px;
+               border: none;
+          }
+          .button:hover{
+               background-color: aqua;
+          }
+          #clearButton{
+               background-color: rgb(17, 229, 17);
+               border: none;
+               color: white;
+          }
+          #clearButton:hover{
+               background-color: red;
+          }
+          #math{
+               background-color: brown;
+               color: white;
+          }
+          #math:hover{
+               background-color: aqua;
+          }
+     </Style>
+</head>
+<body>
+     <div class="container">
+          <fieldset id="container">
+               <form action="" name="calculator">
+                    <h1 class="title">My Calculator</h1>
+                    <input type="text" placeholder="0" name="display" id="display" readonly><br>
+                    <input type="button" value="1" class="button digits" onclick="calculator.display.value += '1'">
+                    <input type="button" value="2" class="button digits" onclick="calculator.display.value += '2'">
+                    <input type="button" value="3" class="button digits" onclick="calculator.display.value += '3'">
+                    <input type="button" value="/" class="button digits" onclick="calculator.display.value += '/'" id="math">
+                    <br>
+                    <input type="button" value="4" class="button digits" onclick="calculator.display.value += '4'">
+                    <input type="button" value="5" class="button digits" onclick="calculator.display.value += '5'">
+                    <input type="button" value="6" class="button digits" onclick="calculator.display.value += '6'">
+                    <input type="button" value="-" class="button digits" onclick="calculator.display.value += '-'" id="math">
+                    <br>
+                    <input type="button" value="7" class="button digits" onclick="calculator.display.value += '7'">
+                    <input type="button" value="8" class="button digits" onclick="calculator.display.value += '8'">
+                    <input type="button" value="9" class="button digits" onclick="calculator.display.value += '9'">
+                    <input type="button" value="x" class="button digits" onclick="calculator.display.value += '*'" id="math">
+                    <br>
+                    <input id="clearButton" type="button" value="C" class="button" onclick="calculator.display.value =''">
+                    <input type="button" value="0" class="button digits" onclick="calculator.display.value += '0'">
+                    <input type="button" value="=" class="button mathbuttons" onclick="calculator.display.value =eval(calculator.display.value)" id="math">
+                    <input type="button" value="+" class="button digits" onclick="calculator.display.value += '+'" id="math">
+
+               </form>
+          </fieldset>
+     </div>
+</body>
+</html>

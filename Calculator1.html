@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculator</title>
+     <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+     <table class="container">
+          <th id="container">
+               <fieldset>
+               <h1>My Calculator</h1>
+               <div class="display">
+                    <input type="text" placeholder="0" style="text-align: right;" name="display" id="display"  readonly>
+               </div>
+               <div class="clear"><button>Clear</button></div>
+               <div class="line1">
+                    <button value="1" class="button digits" onclick="calculator.display.value += '1'">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button class="right1">+</button>
+               </div>
+               <div class="line2">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button class="right1">-</button>
+               </div>
+               <div class="line3">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button class="right1">/</button>
+               </div>
+               <div class="line4">
+                    <button class="right1">=</button>
+                    <button>0</button>
+                    <button class="right1">x</button>
+                    <button class="right1">%</button>
+               </div>
+          </fieldset>
+          </th>
+     </table>
+</body>
+</html>

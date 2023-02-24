@@ -1,0 +1,45 @@
+*{
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+}
+table{
+     border: 8px solid rgb(6, 6, 30);
+     margin: 10px;
+     border-radius: 10px;
+    
+}
+h1{
+     padding:5px;
+     font-size: 35px;
+     color: blue;
+     text-shadow: 2px 5px 10px rgb(121, 35, 35); 
+}
+.display{
+    margin: 5px;
+    display: inline-block ;
+}
+input{
+     width: 100%;
+     padding: 20px;
+     font-size: 25px;
+     font-weight: bold;
+     box-shadow: inset  5px 1px 5px 6px blueviolet;
+}
+button{
+     font-size: 25px;
+     width: 90px;
+     height: 50px;
+     padding: 10px;
+     margin: 3px;
+     font-weight: bold;
+}
+.clear button{
+     width: 390px;
+     background-color: rgb(57, 106, 8);
+     color: white;
+}
+.right1{
+     background-color: rgb(77, 63, 63);
+     color: white;
+}
